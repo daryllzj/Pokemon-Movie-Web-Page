@@ -1,0 +1,62 @@
+@font-face {
+    src: url(../fonts/Pokemon\ Hollow.ttf) ;
+    src: url(../fonts/Pokemon\ Solid.ttf) ;
+    font-family: Pokemon;
+}
+
+
+/* Pikachu Cursor */
+* {cursor: url(https://cur.cursors-4u.net/games/gam-12/gam1191.cur), auto !important;} 
+
+/* Pokemon Fonts */
+nav{
+    font-family: Pokemon, Helvetica, sans-serif;
+}
+
+.font{
+    font-family: Pokemon, Helvetica, sans-serif !important;
+    color: #2a75bb;
+}
+
+/* Change Nav Bar color to Pokemon Colors */
+.navbar{
+    background-color: #ffcb05 !important;
+}
+
+.nav-link {
+    color: #2a75bb !important;
+    font-size: 25px;
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item{
+    color:#2a75bb;
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item:hover{
+    background-color: #ffcb05;
+}
+
+/* Adding Space between Nav Items */
+.navbar-nav > li{
+    padding-left:10px;
+    padding-right:10px;
+  }
+
+.media h5{
+    font-family: Pokemon, Helvetica, sans-serif !important;
+    color: #2a75bb;
+}
+
+/* Footer */
+footer{
+    margin-top: 30px;
+    font-family: Pokemon, Helvetica, sans-serif;
+    background-color: #ffcb05;
+    font-size: 1.1em;  
+    color: #2a75bb;
+    padding:20px;
+}
+
+footer a{
+    color:#2a75bb;
+}

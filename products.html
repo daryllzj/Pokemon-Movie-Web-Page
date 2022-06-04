@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Cinema Mart</title>
+
+    <!-- Link to Bootstap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- Import Javascript -->
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="popper/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Link to own CSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Pokemon logo as Favicon -->
+    <link rel="icon" href="images/logo.png">
+
+</head>
+
+<body>
+
+    <!-- NavBar -->
+<nav class="navbar bg-dark navbar-expand-md navbar-dark">
+
+    <!-- Brand/Logo -->
+    <a class="navbar-brand" href="home.html">
+        <img src="images/logo.png" style="width: 120px;">
+    </a>
+
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavBar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Menu Item -->
+    <div class="collapse navbar-collapse" id="collapsibleNavBar">
+
+        <ul class="navbar-nav">
+            <!-- Home -->
+            <li class="nav-item">
+                <a href="movies.html" class="nav-link text-primary">Movies</a>
+            </li>
+
+            <!-- Characters -->
+            <li class="nav-item">
+                <a href="characters.html" class="nav-link text-primary">Characters<a>
+            </li>
+            
+            <!-- Products (With Dropbown) -->
+            <li class="nav-item dropdown">
+
+                <!-- dropdown-toggle: display the dropdown (down arrow) icon -->
+                <a href="products.html" class="nav-link text-primary dropdown-toggle" data-toggle="dropdown" class="nav-color">Products</a>
+
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="products.html">Posters</a>
+                    <a class="dropdown-item" href="products.html">Toys<a>
+                    <a class="dropdown-item" href="products.html">Games</a>
+                </div>
+            </li>
+
+            <!-- CheckOut -->
+            <li class="nav-item">
+                <a href="rent.html" class="nav-link text-primary">Checkout<a>
+            </li>
+
+        </ul>
+    </div>
+
+</nav>  
+
+<!-- Container for all products -->
+
+<div class="container mt-3 mb-3">
+
+    <!-- First Product Row -->
+    <div class="row">
+
+        <!-- Card 1 -->
+        <div class="col-md-4">
+            <div class="card mt-3">
+                <div class="product-1 align-items-center p-2 text-center">
+                    <img src="images/i1.png" alt="" class="rounded" width="160">
+                    <h5>Gengar Battle Feature</h5>
+
+                    <!-- Card info -->
+                    <div class="mt-3 info">
+                        <span class="text1 d-block">Brand: Pokemon</span>
+                    </div>
+
+                    <div class="cost mt-3 text-dark">
+                        <span>$12</span>
+                        <div class="star mt-3 align-items-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- Button for Card -->
+                    <div class="p-3 color text-center text-white mt-3 cursor" data-toggle="modal" data-target="#exampleModal">
+                        <span class="text-uppercase">Add to Cart</span>
+                    </div>
+
+            </div>
+        </div>
+        <!-- Card 1 Ends here -->
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+            <div class="card mt-3">
+                <div class="product-1 align-items-center p-2 text-center">
+                    <img src="images/i2.png" alt="" class="rounded" width="160">
+                    <h5>Carrying case</h5>
+
+                    <!-- Card info -->
+                    <div class="mt-3 info">
+                        <span class="text1 d-block">Brand: tombert</span>
+                    </div>
+
+                    <div class="cost mt-3 text-dark">
+                        <span>$6</span>
+                        <div class="star mt-3 align-items-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- Button for Card -->
+                    <div class="p-3 color text-center text-white mt-3 cursor" data-toggle="modal" data-target="#exampleModal">
+                        <span class="text-uppercase">Add to Cart</span>
+                    </div>
+
+            </div>
+        </div>
+        <!-- Card 2 Ends here -->
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+            <div class="card mt-3">
+                <div class="product-1 align-items-center p-2 text-center">
+                    <img src="images/i3.png" alt="" class="rounded" width="160">
+                    <h5>Plush Dolls</h5>
+
+                    <!-- Card info -->
+                    <div class="mt-3 info">
+                        <span class="text1 d-block">OEM</span>
+                    </div>
+
+                    <div class="cost mt-3 text-dark">
+                        <span>$20</span>
+                        <div class="star mt-3 align-items-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- Button for Card -->
+                    <div class="p-3 color text-center text-white mt-3 cursor" data-toggle="modal" data-target="#exampleModal">
+                        <span class="text-uppercase">Add to Cart</span>
+                    </div>
+
+            </div>
+        </div>
+        <!-- Card 3 Ends here -->
+
+
+    </div>
+
+    <!-- Second Product Row -->
+    <div class="row mt-3">
+
+        <!-- Card 1 -->
+        <div class="col-md-4">
+            <div class="card mt-3">
+                <div class="product-1 align-items-center p-2 text-center">
+                    <img src="images/i4.png" alt="" class="rounded" width="160">
+                    <h5>PokeBall (Pikachu)</h5>
+
+                    <!-- Card info -->
+                    <div class="mt-3 info">
+                        <span class="text1 d-block">Brand: Pokemon</span>
+                    </div>
+
+                    <div class="cost mt-3 text-dark">
+                        <span>$35</span>
+                        <div class="star mt-3 align-items-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- Button for Card -->
+                    <div class="p-3 color text-center text-white mt-3 cursor" data-toggle="modal" data-target="#exampleModal">
+                        <span class="text-uppercase">Add to Cart</span>
+                    </div>
+
+            </div>
+        </div>
+        <!-- Card 1 Ends here -->
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+            <div class="card mt-3">
+                <div class="product-1 align-items-center p-2 text-center">
+                    <img src="images/i5.png" alt="" class="rounded" width="160">
+                    <h5>Funko Pop: Mr Mime</h5>
+
+                    <!-- Card info -->
+                    <div class="mt-3 info">
+                        <span class="text1 d-block">Brand: Bandai</span>
+                    </div>
+
+                    <div class="cost mt-3 text-dark">
+                        <span>$99</span>
+                        <div class="star mt-3 align-items-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- Button for Card -->
+                    <div class="p-3 color text-center text-white mt-3 cursor" data-toggle="modal" data-target="#exampleModal">
+                        <span class="text-uppercase">Add to Cart</span>
+                    </div>
+
+            </div>
+        </div>
+        <!-- Card 2 Ends here -->
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+            <div class="card mt-3">
+                <div class="product-1 align-items-center p-2 text-center">
+                    <img src="images/i6.png" alt="" class="rounded" width="160">
+                    <h5>Pokemon Figures (Large)</h5>
+
+                    <!-- Card info -->
+                    <div class="mt-3 info">
+                        <span class="text1 d-block">OEM</span>
+                    </div>
+
+                    <div class="cost mt-3 text-dark">
+                        <span>$15</span>
+                        <div class="star mt-3 align-items-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- Button for Card -->
+                    <div class="p-3 color text-center text-white mt-3 cursor" data-toggle="modal" data-target="#exampleModal">
+                        <span class="text-uppercase">Add to Cart</span>
+                    </div>
+
+            </div>
+        </div>
+        <!-- Card 3 Ends here -->
+
+
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                      Your order has been added.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+      </div>
+
+</div>
+
+</body>
+
+
+<footer >
+    <div class="flex-row">
+    <div>
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+    <div class="mt-3">
+    &copy; Pokemon Cinema Mart, Singapore Poly, 500 Dover Road, 
+    &#9742; <a href="tel:+657721900">772 1900</a> 
+    &#9993;  <a href="mailto:pkmmart@sp.edu.sg">pkmmart@sp.edu.sg</a> 
+    </div>
+    </div>
+</footer>
+
+</body>
+</html>

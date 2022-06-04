@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Cinema Mart</title>
+
+    <!-- Link to Bootstap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- Import Javascript -->
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="popper/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Link to own CSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/home.css">
+
+    <!-- Pokemon logo as Favicon -->
+    <link rel="icon" href="images/logo.png">
+
+</head>
+
+<body>
+
+    <!-- NavBar -->
+<nav class="navbar bg-dark navbar-expand-md navbar-dark">
+
+    <!-- Brand/Logo -->
+    <a class="navbar-brand" href="home.html">
+        <img src="images/logo.png" style="width: 120px;">
+    </a>
+
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavBar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Menu Item -->
+    <div class="collapse navbar-collapse" id="collapsibleNavBar">
+
+        <ul class="navbar-nav">
+            <!-- Home -->
+            <li class="nav-item">
+                <a href="movies.html" class="nav-link text-primary">Movies</a>
+            </li>
+
+            <!-- Characters -->
+            <li class="nav-item">
+                <a href="characters.html" class="nav-link text-primary">Characters<a>
+            </li>
+            
+            <!-- Products (With Dropbown) -->
+            <li class="nav-item dropdown">
+
+                <!-- dropdown-toggle: display the dropdown (down arrow) icon -->
+                <a href="products.html" class="nav-link text-primary dropdown-toggle" data-toggle="dropdown" class="nav-color">Products</a>
+
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="products.html">Posters</a>
+                    <a class="dropdown-item" href="products.html">Toys<a>
+                    <a class="dropdown-item" href="products.html">Games</a>
+                </div>
+            </li>
+
+            <!-- CheckOut -->
+            <li class="nav-item">
+                <a href="rent.html" class="nav-link text-primary">Checkout<a>
+            </li>
+
+        </ul>
+    </div>
+
+</nav>  
+
+<!-- Movies-->
+
+<div class="container" >
+
+ <div class="row">  
+
+<!-- First Column -->
+<ul class="list-unstyled mt-3 col-md-6">
+    <li class="media">
+      <img class="mr-3" src="images/p13.jpg" height="320px" alt="Generic placeholder image">
+      <div class="media-body">
+        <h5 class="mt-0 mb-1">Zoroark—Master of Illusions</h5>
+        <p>
+            Ash, Dawn, and Brock arrive in Crown City for the Pokémon Baccer World Cup, but instead discover that a Zoroark under the control of a villain is causing havoc disguised as the Legendary Pokémon Entei, Raikou and Suicune. Zoroark's child Zorua asks for their help to save his mother from the evil Kodai and his Shuppet who seeks out Celebi and its ability to travel through time.
+        </p>
+        <!-- Button to play trailer -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#play-trailer"> Watch Trailer </button>
+        <!-- Button to add to cart -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-to-cart"> Add To Cart </button>
+    </div>  
+    </li>
+
+    <li class="media mt-3">
+      <img class="mr-3" src="images/p14.jpg" height="320px" alt="Generic placeholder image">
+      <div class="media-body">
+        <h5 class="mt-0 mb-1">Victini and the White Hero: Reshiram </h5>
+        <p>
+            Ash, Iris, and Cilan travel to Eindoak Town to participate in a tournament, meeting the Mythical Pokémon Victini on the way. However, they instead discover they must stop Damon, a descendant of Eindoak's ancient People of the Vale, from using the Legendary Pokémon Zekrom[a] or Reshiram[b] to use the Dragon Force to restore the former glory of the Kingdom of Vale, only to realize it is out of control and could destroy the world.
+        </p>
+            <!-- Button to play trailer -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#play-trailer"> Watch Trailer </button>
+        <!-- Button to add to cart -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-to-cart"> Add To Cart </button>
+    </div>  
+
+    <li class="media mt-3">
+        <img class="mr-3" src="images/p15.jpg" height="320px" alt="Generic placeholder image">
+        <div class="media-body">
+          <h5 class="mt-0 mb-1">Kyurem vs. the Sword of Justice</h5>
+          <p>
+            Ash, Iris, and Cilan help the Mythical Pokémon Keldeo escape from the Legendary Pokémon Kyurem, who seeks to battle it after freezing its compatriates the Sacred Swordsmen Cobalion, Terrakion, and Virizion.
+        </p>
+          <!-- Button to play trailer -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#play-trailer"> Watch Trailer </button>
+          <!-- Button to add to cart -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-to-cart"> Add To Cart </button>
+      </div> 
+</ul>
+
+<!-- Second Column -->
+<ul class="list-unstyled mt-3 col-md-6">
+    <li class="media">
+      <img class="mr-3" src="images/p16.jpg" height="320px" alt="Generic placeholder image">
+      <div class="media-body">
+        <h5 class="mt-0 mb-1">Genesect and the Legend Awakened</h5>
+        <p>
+            Ash, Iris, and Cilan visit New Tork City to enjoy its Pokémon Hills park, only to come under attack from a group of Genesect angry over losing their home. Ash, Iris, and Cilan are saved by Mewtwo, who wants to help the Genesect but also prevent them from destroying the city.
+        </p>
+        <!-- Button to play trailer -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#play-trailer"> Watch Trailer </button>
+        <!-- Button to add to cart -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-to-cart"> Add To Cart </button>
+    </div>  
+    </li>
+
+    <li class="media mt-3">
+      <img class="mr-3" src="images/p17.jpg" height="320px" alt="Generic placeholder image">
+      <div class="media-body">
+        <h5 class="mt-0 mb-1">Diancie and the Cocoon of Destruction</h5>
+        <p>
+            When the Mythical Pokémon Diancie cannot figure out how to make a new Heart Diamond to save her kingdom of Carbink subjects, she seeks out the Legendary Life Pokémon Xerneas for help, meeting Ash, Serena, Clemont, and Bonnie on the way, as they help her escape a group of jewel thieves and the unintentional awakening of the Legendary Destruction Pokémon Yveltal.
+        </p>    
+            <!-- Button to play trailer -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#play-trailer"> Watch Trailer </button>
+        <!-- Button to add to cart -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-to-cart"> Add To Cart </button>
+    </div>  
+
+    <li class="media mt-3">
+        <img class="mr-3" src="images/p18.jpg" height="320px" alt="Generic placeholder image">
+        <div class="media-body">
+          <h5 class="mt-0 mb-1">Hoopa and the Clash of Ages</h5>
+          <p>
+            When Ash, Pikachu, and their friends visit a desert city by the sea, they meet the Mythical Pokémon Hoopa, who has the ability to summon things—including people and Pokémon—through its magic rings. After a scary incident, they learn a story about a brave hero who stopped the rampage of a terrifying Pokémon long ago. Now, the threat that has been bottled up for years is in danger of breaking loose again! Can Ash help his new friend overcome the darkness within...or will a dangerous secret erupt into a clash of legends?
+        </p>
+          <!-- Button to play trailer -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#play-trailer"> Watch Trailer </button>
+          <!-- Button to add to cart -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-to-cart"> Add To Cart </button>
+      </div> 
+</ul>
+</div> 
+
+
+<!-- Pagination -->
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="movies2.html" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="movies.html">1</a></li>
+      <li class="page-item "><a class="page-link" href="movies2.html">2</a></li>
+      <li class="page-item active"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="movies4.html">4</a></li>
+      <li class="page-item">
+        <a class="page-link" href="movies4.html" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </a>
+      </li>
+    </ul>
+</nav>
+
+
+<!-- Modal to play trailer -->
+<div class="modal fade" id="play-trailer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/rg6CiPI6h2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- Modal to add to cart -->
+<div class="modal fade" id="add-to-cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Gotta Watch Them All!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Your order has been added.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div> 
+
+  <footer >
+    <div class="flex-row">
+    <div>
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+    <div class="mt-3">
+    &copy; Pokemon Cinema Mart, Singapore Poly, 500 Dover Road, 
+    &#9742; <a href="tel:+657721900">772 1900</a> 
+    &#9993;  <a href="mailto:pkmmart@sp.edu.sg">pkmmart@sp.edu.sg</a> 
+    </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+/* Card Styling */
+
+
+.card{
+    border: none;
+    outline: none;
+    background-color: #ffcb05;
+    border-radius: 20px;
+    transition: transform .3s;
+}
+
+.card:hover{
+    transform: translateY(-15px);
+    transition: transform .3s;
+}
+
+.text1{
+    font-size: 13px;
+    color: #2a75bb;
+}
+
+.info{
+    line-height:17px;
+}
+
+.star{
+    color: #2a75bb;
+}
+
+.color:hover{
+    opacity: 0.8;
+}
+
+.cursor{
+    cursor: pointer;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+h5{
+    margin-top: 30px;
+    font-family: Pokemon, Helvetica, sans-serif !important;
+    color: #2a75bb;
+}
+
+/* card styling */
+.cost span{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.color{
+    background-color: #c7a008 ;
+}
+

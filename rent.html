@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Cinema Mart</title>
+
+    <!-- Link to Bootstap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- Import Javascript -->
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="popper/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Link to own CSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- <link rel="stylesheet" href="css/home.css"> -->
+
+    <!-- Pokemon logo as Favicon -->
+    <link rel="icon" href="images/logo.png">
+
+</head>
+
+<body>
+
+    <!-- NavBar -->
+<nav class="navbar bg-dark navbar-expand-md navbar-dark">
+
+    <!-- Brand/Logo -->
+    <a class="navbar-brand" href="home.html">
+        <img src="images/logo.png" style="width: 120px;">
+    </a>
+
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavBar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Menu Item -->
+    <div class="collapse navbar-collapse" id="collapsibleNavBar">
+
+        <ul class="navbar-nav">
+            <!-- Home -->
+            <li class="nav-item">
+                <a href="movies.html" class="nav-link text-primary">Movies</a>
+            </li>
+
+            <!-- Characters -->
+            <li class="nav-item">
+                <a href="characters.html" class="nav-link text-primary">Characters<a>
+            </li>
+            
+            <!-- Products (With Dropbown) -->
+            <li class="nav-item dropdown">
+
+                <!-- dropdown-toggle: display the dropdown (down arrow) icon -->
+                <a href="products.html" class="nav-link text-primary dropdown-toggle" data-toggle="dropdown" class="nav-color">Products</a>
+
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="products.html">Posters</a>
+                    <a class="dropdown-item" href="products.html">Toys<a>
+                    <a class="dropdown-item" href="products.html">Games</a>
+                </div>
+            </li>
+
+            <!-- CheckOut -->
+            <li class="nav-item">
+                <a href="rent.html" class="nav-link text-primary">Checkout<a>
+            </li>
+
+        </ul>
+    </div>
+
+</nav> 
+
+<!-- Order Form -->
+<div class="container mt-3">
+
+<div class="text-center mb-3">
+<img src="images/tv.png" class="mb-4 d-block mx-auto" alt="Pokemon Logo" width="150">
+<h2 class="font">Watch your favourite Pokemon Movie today</h2>
+</div>
+
+<div class="row">
+
+
+    <!-- Shopping Cart -->
+    <div class="col-md-5 order-md-last mb-3">
+        <h4 class="mb-3">
+          <span class="text-primary">Your cart</span>
+        </h4>
+
+          <div id="accordion" role="tablist">
+
+            <!-- Movie 1 -->
+            <div class="card">
+              <div class="card-header" role="tab" id="headingOne">
+                <h5 class="mb-0">
+                  <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Lucario And The Mystery Of Mew
+                  </a>
+                </h5>
+              </div>
+          
+              <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="text-muted">Brief description</h6>
+                            <small>Collectible DVD: 1</small>
+                        </div>
+                        <span class="text-muted">$2</span>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Movie 2 -->
+            <div class="card">
+              <div class="card-header" role="tab" id="headingTwo">
+                <h5 class="mb-0">
+                  <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Detective Pikachu
+                  </a>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between lh-sm">
+                        <div>
+                        <h6 class="text-muted">Brief description</h6>
+                        <small>Collectible DVD: 1</small>
+                        </div>
+                        <span class="text-muted">$2</span>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Movie 3 -->
+            <div class="card">
+                <div class="card-header" role="tab" id="headingTwo">
+                  <h5 class="mb-0">
+                    <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+                        Mewtwo Strikes Back
+                    </a>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="card-body">
+                    
+                        <div class="d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="text-muted">Brief description</h6>
+                                <small>Collectible DVD: 1</small>
+                            </div>
+                            <span class="text-muted">$2</span>
+                        </div>
+                  </div>
+                </div>
+              </div>
+
+            <!-- Total Price -->
+              <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between lh-sm">
+                        <span>Total</span>
+                        <strong>$6</strong>
+                    </div>
+                </div>   
+              </div>
+
+          </div>
+          <!-- Promo Code -->
+        <form class="card p-2">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Promo code">
+            <button type="submit" class="btn btn-secondary">Redeem</button>
+          </div>
+        </form>
+    </div>
+
+
+    <!-- Billing Details -->
+
+    <div class="col-md-7 ">
+        <h4 class="mb-3">
+            <span class="text-primary">Billing Details</span>
+          </h4>
+
+        <form action="" method="get">
+            <div class="row">
+                <!-- First Name -->
+                <div class="col-sm-6">
+                    <label for="firstName" class="form-label">First Name*</label>
+                    <input type="text" id="firstName" class="form-control" placeholder="Ash" required> 
+                    <div class="invalid-feedback">Valid first name is required</div>
+                </div>
+                <!-- Last Name -->
+                <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Last Name*</label>
+                    <input type="text" id="lastName" class="form-control" placeholder="Ketchum" required> 
+                    <div class="invalid-feedback">Valid last name is required</div>
+                </div>
+                <!-- Email -->
+                <div class="col-sm-12 mt-3" >
+                    <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                    <input type="email" id="email" class="form-control"> 
+                </div>
+
+                <!-- Address -->
+                <div class="col-sm-12 mt-3" >
+                    <label for="address1" class="form-label">Address*</span></label>
+                    <input type="text" id="address1" class="form-control"> 
+                </div>
+                <!-- Address 2 -->
+                <div class="col-sm-12 mt-3" >
+                    <label for="address2" class="form-label">Address 2<span class="text-muted">(Optional)</span></label>
+                    <input type="text" id="address2" class="form-control"> 
+                </div>
+                <!-- Country -->
+                <div class="col-sm-5 mt-3" >
+                    <label for="address2" class="form-label" required="">Country*</label>
+                    <select class="custom-select" required="">
+                        <option selected="">Select</option>
+                        <option value="1">Afghanistan</option>
+                        <option value="2">Albania</option>
+                        <option value="3">etc...</option>
+                      </select>
+                </div>
+                <!-- State -->
+                <div class="col-sm-4 mt-3" >
+                    <label for="state" class="form-label">State</label>
+                    <input type="text" id="state" class="form-control" required>
+                </div>
+                <!-- Zip Code -->
+                <div class="col-sm-3 mt-3" >
+                    <label for="state" class="form-label">Zip Code</label>
+                    <input type="text" id="state" class="form-control" required>
+                </div>
+            
+            </div>
+        
+            <hr class="my-4">
+            <!-- Shipping Address -->
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="same-address">
+                <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+              </div>
+      
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="save-info">
+                <label class="form-check-label" for="save-info">Save this information for next time</label>
+              </div>
+
+              <hr class="my-4">
+
+              <!-- Payment Mode -->
+              <div class="custom-control custom-radio" required="">
+                <input type="radio" id="visa" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="visa">Visa</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="mastercard" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="mastercard">Mastercard</label>
+              </div>
+              
+              <!-- Card Details -->
+
+              <!-- Card Name -->
+              <div class="row mt-3">
+                <div class="col-md-6">
+                  <label for="cc-name" class="form-label">Name on card*</label>
+                  <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                  <small class="text-muted">Full name as displayed on card</small>
+                  <div class="invalid-feedback">
+                    Name on card is required
+                  </div>
+                </div>
+                
+                <!-- Card Number -->
+                <div class="col-md-6">
+                  <label for="cc-number" class="form-label">Credit card number*</label>
+                  <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                  <div class="invalid-feedback">
+                    Credit card number is required
+                  </div>
+                </div>
+      
+                <!-- Exp Date -->
+                <div class="col-md-3 mt-3">
+                  <label for="cc-expiration" class="form-label">Expiration*</label>
+                  <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                  <div class="invalid-feedback">
+                    Expiration date required
+                  </div>
+                </div>
+      
+                <!-- CVV -->
+                <div class="col-md-3 mt-3">
+                  <label for="cc-cvv" class="form-label">CVV*</label>
+                  <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                  <div class="invalid-feedback">
+                    Security code required
+                  </div>
+                </div>
+              </div>
+
+              <hr class="my-4">
+
+              <!-- Checkout Button -->
+              <button class="w-100 btn btn-primary btn-lg" type="submit" data-toggle="modal" id="exampleModalCenter">Continue to checkout</button>
+        </form>
+
+        Modal upon Check out
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Gotcha! Your order has been placed</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img src="images/pokeball caught.png" width="100%" alt="">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+</div>
+
+<footer >
+  <div class="flex-row">
+  <div>
+  <form class="form-inline">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search Here">
+      <button class="btn my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+  <div class="mt-3">
+  &copy; Pokemon Cinema Mart, Singapore Poly, 500 Dover Road, 
+  &#9742; <a href="tel:+657721900">772 1900</a> 
+  &#9993;  <a href="mailto:pkmmart@sp.edu.sg">pkmmart@sp.edu.sg</a> 
+  </div>
+  </div>
+</footer>
+
+</body>
+</html>

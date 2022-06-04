@@ -1,0 +1,41 @@
+.carousel-caption{
+    background-color: black;
+    font-family: Pokemon, Helvetica, sans-serif; 
+    opacity: 0.8;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  height: 30px;
+  width: 30px;
+  background-color: #2a75bb;
+  bottom:30px !important;
+  top:auto;
+  opacity: 1;
+}
+
+.carousel-control-prev{
+  left: 30px;}
+
+.carousel-control-next{
+  left: calc(30px + 30px + 10px);
+}
+
+.card-body{
+    background-color:  #ffcb05;
+    
+}
+
+.card-title{
+    font-family: Pokemon, Helvetica, sans-serif;
+    color: #2a75bb;
+}
+
+.jumbotron{
+    background-color:  #c7a008;
+}
+
+h1{
+    font-family: Pokemon, Helvetica, sans-serif;
+    color: #3c5aa6;
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Cinema Mart</title>
+
+    <!-- Link to Bootstap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- Import Javascript -->
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="popper/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Link to own CSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/home.css">
+
+    <!-- Pokemon logo as Favicon -->
+    <link rel="icon" href="images/logo.png">
+
+</head>
+
+<body>
+
+    <!-- NavBar -->
+<nav class="navbar bg-dark navbar-expand-md navbar-dark">
+
+    <!-- Brand/Logo -->
+    <a class="navbar-brand" href="home.html">
+        <img src="images/logo.png" style="width: 120px;">
+    </a>
+
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavBar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Menu Item -->
+    <div class="collapse navbar-collapse" id="collapsibleNavBar">
+
+        <ul class="navbar-nav">
+            <!-- Home -->
+            <li class="nav-item">
+                <a href="movies.html" class="nav-link text-primary">Movies</a>
+            </li>
+
+            <!-- Characters -->
+            <li class="nav-item">
+                <a href="characters.html" class="nav-link text-primary">Characters<a>
+            </li>
+            
+            <!-- Products (With Dropbown) -->
+            <li class="nav-item dropdown">
+
+                <!-- dropdown-toggle: display the dropdown (down arrow) icon -->
+                <a href="products.html" class="nav-link text-primary dropdown-toggle" data-toggle="dropdown" class="nav-color">Products</a>
+
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="products.html">Posters</a>
+                    <a class="dropdown-item" href="products.html">Toys<a>
+                    <a class="dropdown-item" href="products.html">Games</a>
+                </div>
+            </li>
+
+            <!-- CheckOut -->
+            <li class="nav-item">
+                <a href="rent.html" class="nav-link text-primary">Checkout<a>
+            </li>
+
+        </ul>
+    </div>
+
+</nav>  
+
+<!-- Movies-->
+
+<div class="container" >
+
+ <div class="row">  
+
+<!-- First Column -->
+<ul class="list-unstyled mt-3 col-md-6">
+    <li class="media">
+      <img class="mr-3" src="images/p19.jpg" height="320px" alt="Generic placeholder image">
+      <div class="media-body">
+        <h5 class="mt-0 mb-1">Volcanion and the Mechanical Marvel	</h5>
+        <p>
+            Ash and his friends encounter the Mythical Pokémon Volcanion after a blast of steam from the sky, and Ash becomes bonded to it by an unknown force. Volcanion, who hates humans, is forced to bring Ash along as it heads to the Azoth Kingdom. Volcanion is in pursuit of the artificial Mythical Pokémon Magearna, hoping to rescue it from a corrupt minister who has stolen it with the intent of using Magearna's mysterious power to conquer the kingdom of machinery. Ash and Volcanion are forced to work together to rescue Magearna.
+        </p>
+        <!-- Button to play trailer -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#play-trailer"> Watch Trailer </button>
+        <!-- Button to add to cart -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-to-cart"> Add To Cart </button>
+    </div>  
+    </li>
+
+    <li class="media mt-3">
+      <img class="mr-3" src="images/p20.jpg" height="320px" alt="Generic placeholder image">
+      <div class="media-body">
+        <h5 class="mt-0 mb-1">I Choose You!	</h5>
+        <p>
+            A young athlete whose running days might be behind her, a compulsive liar, a shy researcher, a bitter old woman, and a little girl with a big secret—the only thing they have in common is the annual Wind Festival in Fula City. The festival celebrates the Legendary Pokémon Lugia, who brings the wind that powers this seaside city. When a series of threats endangers not just the festival, but all the people and Pokémon of Fula City, it'll take more than just Ash and Pikachu to save the day! Can everyone put aside their differences and work together—or will it all end in destruction?
+        </p>
+            <!-- Button to play trailer -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#play-trailer"> Watch Trailer </button>
+        <!-- Button to add to cart -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-to-cart"> Add To Cart </button>
+    </div>  
+
+    <li class="media mt-3">
+        <img class="mr-3" src="images/p21.jpg" height="320px" alt="Generic placeholder image">
+        <div class="media-body">
+          <h5 class="mt-0 mb-1">The Power of Us</h5>
+          <p>
+            A young athlete whose running days might be behind her, a compulsive liar, a shy researcher, a bitter old woman, and a little girl with a big secret—the only thing they have in common is the annual Wind Festival in Fula City. The festival celebrates the Legendary Pokémon Lugia, who brings the wind that powers this seaside city. When a series of threats endangers not just the festival, but all the people and Pokémon of Fula City, it'll take more than just Ash and Pikachu to save the day! Can everyone put aside their differences and work together—or will it all end in destruction?
+        </p>
+          <!-- Button to play trailer -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#play-trailer"> Watch Trailer </button>
+          <!-- Button to add to cart -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-to-cart"> Add To Cart </button>
+      </div> 
+</ul>
+
+<!-- Second Column -->
+<ul class="list-unstyled mt-3 col-md-6">
+    <li class="media">
+      <img class="mr-3" src="images/p22.jpg" height="320px" alt="Generic placeholder image">
+      <div class="media-body">
+        <h5 class="mt-0 mb-1">Mewtwo Strikes Back: Evolution</h5>
+        <p>
+            CGI animated remake of The First Movie: Mewtwo Strikes Back.
+        </p>
+        <!-- Button to play trailer -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#play-trailer"> Watch Trailer </button>
+        <!-- Button to add to cart -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-to-cart"> Add To Cart </button>
+    </div>  
+    </li>
+
+    <li class="media mt-3">
+      <img class="mr-3" src="images/p23.jpg" height="320px" alt="Generic placeholder image">
+      <div class="media-body">
+        <h5 class="mt-0 mb-1">	Secrets of the Jungle</h5>
+        <p>
+            Ash and Pikachu encounter Koko, a young man who was raised as a Pokémon by Zarude and thus believes himself to be one. They help him begin to uncover his true identity and past, which leads to the revelation of a plot at the Biotope Company that threatens to destroy Zarude's home in the Forest of Okoya.
+        </p>   
+            <!-- Button to play trailer -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#play-trailer"> Watch Trailer </button>
+        <!-- Button to add to cart -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-to-cart"> Add To Cart </button>
+    </div>  
+
+    <li class="media mt-3">
+        <img class="mr-3" src="images/p24.jpg" height="320px" alt="Generic placeholder image">
+        <div class="media-body">
+          <h5 class="mt-0 mb-1">Detective Pikachu</h5>
+          <p>
+            Former Pokémon Trainer Tim Goodman and Pikachu attempt to uncover the mysterious disappearance of Tim's father, Harry.        
+        </p>
+          <!-- Button to play trailer -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#play-trailer"> Watch Trailer </button>
+          <!-- Button to add to cart -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-to-cart"> Add To Cart </button>
+      </div> 
+</ul>
+</div> 
+
+
+<!-- Pagination -->
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="movies.html" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="movies.html">1</a></li>
+      <li class="page-item "><a class="page-link" href="movies2.html">2</a></li>
+      <li class="page-item"><a class="page-link" href="movies3.html">3</a></li>
+      <li class="page-item active"><a class="page-link" href="movies4.html">4</a></li>
+      <li class="page-item disabled">
+        <a class="page-link " href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </a>
+      </li>
+    </ul>
+</nav>
+
+
+<!-- Modal to play trailer -->
+<div class="modal fade" id="play-trailer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/rg6CiPI6h2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- Modal to add to cart -->
+<div class="modal fade" id="add-to-cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Gotta Watch Them All!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Your order has been added.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div> 
+
+<footer >
+    <div class="flex-row">
+    <div>
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+    <div class="mt-3">
+    &copy; Pokemon Cinema Mart, Singapore Poly, 500 Dover Road, 
+    &#9742; <a href="tel:+657721900">772 1900</a> 
+    &#9993;  <a href="mailto:pkmmart@sp.edu.sg">pkmmart@sp.edu.sg</a> 
+    </div>
+    </div>
+</footer>
+
+</body>
+</html>
